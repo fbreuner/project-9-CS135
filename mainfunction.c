@@ -58,22 +58,3 @@ int chooseDifficulty()
 	return dif;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-return 0;
-}
