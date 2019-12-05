@@ -12,8 +12,9 @@ int main ()
   int menu;
   do
   {
-  	printf("hey... you wanna play a game?\n1 - play game\n2 - see scoreboard\n0 - exit\n")
-	scanf("%d", menu);
+  	printf("hey... you wanna play a game?\n");
+  	printf("\n1 - play game\n2 - see scoreboard\n0 - exit\n");
+	scanf("%d", &menu);
 	switch(menu)
 	{
 		case 1:
@@ -29,17 +30,18 @@ int main ()
 			}
 			if(difficulty == 3)
 			{
-				printf("What's this? Hard mode? Well, you asked for it...\nThe ground begins to shake.\nA voice: YOU DARE CHALLENGE ME???\n\n*pokemon battle music*\n);
+				printf("What's this? Hard mode? Well, you asked for it...\nThe ground begins to shake.\nA voice: YOU DARE CHALLENGE ME???\n\n*pokemon battle music*\n");
 			}
 			//genBoard(difficulty, other parameters);
 			//playGame(parameters);
 			//displayScoreboard(parameters);
 			//These functions will probably have other sub-functions in them that we can figure out individually
+			printf("\n\n");
 			break;
 		case 2: 
 			printf("Here's what everyone else got.\n");
 			//displayScoreboard(parameters);
-			printf("Can you do better?"\n);
+			printf("Can you do better?\n");
 			break;
 		case 0:
 			break;
