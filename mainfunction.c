@@ -49,7 +49,7 @@ int main ()
 return 0;
 }
 
-int chooseDifficulty();
+int chooseDifficulty()
 {
 	int dif;
 	printf("How do you like it?\n");
