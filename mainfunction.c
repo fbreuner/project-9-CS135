@@ -1,8 +1,10 @@
 //Project 9
 #include <stdio.h>
+#define MAX_STR 100
 
 int chooseDifficulty();
 void displayScoreboard(int difficulty, int moves);
+int readScores(
 
 
 int main ()
@@ -32,7 +34,7 @@ int main ()
 				printf("You have chosen medium difficulty. Neat.\n");
 			}
 			if(difficulty == 3)
-			{
+			{e
 				printf("What's this? Hard mode? Well, you asked for it...\nThe ground begins to shake.\nA voice: YOU DARE CHALLENGE ME???\n\n*pokemon battle music*\n");
 			}
 			printf("Enter a number of moves: ");
@@ -67,9 +69,17 @@ int chooseDifficulty()
 
 void displayScorebaord(int difficulty, int moves)
 {
-	int endScore = moves - difficulty;
-	printf("Top scores: \n12\n11\n9000\n4\n");
-	printf("Final score: %d\n", endScore);
+	char names[][MAX_STR];
+	int scores[];
+	FILE*
+	if (fopen("scores.txt" "r")==NULL)
+	{
+		printf(stderror "Could not open scoreboard file.\n");
+	}
+	else
+	{
+		printf("Can open scores.txt\n");
+	}
 
 }
 	
