@@ -5,7 +5,7 @@
 int chooseDifficulty();
 void displayScoreboard(int difficulty, int moves);
 int readScores(
-
+//edit
 
 int main ()
 {
