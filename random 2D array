@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+enum { MAXROW = 2, MAXCOL = 3 };
+
+int main()
+{
+    
+    int ix,ix2 = 0;
+    int iy,iy2 = 0;
+   
+    char array1[MAXROW][MAXCOL];
+    //char array2[MAXROW][MAXCOL];
+    
+    srandom(time(NULL));
+
+    for (ix = 0; ix < MAXROW; ix++)
+    {
+        for (iy = 0; iy < MAXCOL; iy++)
+        {
+            array1[ix][iy] = random() % 26 + 'A';
+            printf("%c ", array1[ix][iy]);
+        }
+        printf("\n");
+    }
+    printf("\n\n");
+
+    for (int row = 0; row < MAXROW - 1; row++)
+    {
+        for (int col = 0; col < MAXCOL; col++)
+        {
+            if (array1[row][col] == array1[row+1][col])
+                printf("a[%2d][%2d] = a[%2d][%2d] = %c\n", row, col, row+1, col, array1[row][col]);
+        }
+    }
+
+    for (int col = 0; col < MAXCOL - 1; col++)
+    {
+        for (int row = 0; row < MAXROW; row++)
+        {
+            if (array1[row][col] == array1[row][col+1])
+                printf("a[%2d][%2d] = a[%2d][%2d] = %c\n", row, col, row, col+1, array1[row][col]);
+        }
+    }
+
+    return(0);
+}
